@@ -1,1 +1,4549 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Fathimath Shimna EP | Software Developer | AI Enthusiast</title>
+
+<meta name="description"
+content="Official Portfolio of Fathimath Shimna EP — Software Developer, AI Enthusiast, Data Analyst, Full Stack Developer.">
+
+<meta name="keywords"
+content="Fathimath Shimna EP, Portfolio, Software Developer, AI Engineer, Data Analyst, Full Stack Developer, Python Developer, Java Developer">
+
+<meta name="author"
+content="Fathimath Shimna EP">
+
+<meta name="theme-color"
+content="#0b1119">
+
+<meta property="og:title"
+content="Fathimath Shimna EP Portfolio">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:image"
+content="images/profile.jpg">
+
+<meta property="og:description"
+content="Professional Software Developer Portfolio">
+
+<meta property="og:url"
+content="https://yourusername.github.io/">
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<meta name="twitter:title"
+content="Fathimath Shimna EP">
+
+<meta name="twitter:description"
+content="Software Developer | AI Enthusiast">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.16/dist/lenis.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<style>
+
+/* ===========================================================
+        ROOT VARIABLES
+=========================================================== */
+
+:root{
+
+--bg:#050505;
+
+--surface:#0d1624;
+
+--glass:rgba(255,255,255,.06);
+
+--glassBorder:rgba(255,255,255,.12);
+
+--primary:#39d5ff;
+
+--secondary:#87e9ff;
+
+--accent:#8bf8ff;
+
+--white:#ffffff;
+
+--text:#edf8ff;
+
+--muted:#9cb8d3;
+
+--shadow:0 20px 60px rgba(0,0,0,.45);
+
+--radius:22px;
+
+--transition:.45s cubic-bezier(.22,.61,.36,1);
+
+--max-width:1400px;
+
+}
+
+/* ===========================================================
+RESET
+=========================================================== */
+
+*,
+*::before,
+*::after{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:var(--bg);
+
+color:var(--text);
+
+overflow-x:hidden;
+
+line-height:1.6;
+
+}
+
+/* ===========================================================
+CUSTOM SCROLLBAR
+=========================================================== */
+
+::-webkit-scrollbar{
+
+width:11px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#07111d;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:linear-gradient(
+180deg,
+#48dfff,
+#7cf6ff);
+
+border-radius:50px;
+
+}
+
+/* ===========================================================
+SELECTION
+=========================================================== */
+
+::selection{
+
+background:#58e5ff;
+color:#00131d;
+
+}
+
+/* ===========================================================
+GLOBAL TYPOGRAPHY
+=========================================================== */
+
+h1,h2,h3,h4,h5,h6{
+
+font-weight:800;
+line-height:1.15;
+
+}
+
+p{
+
+color:var(--muted);
+
+}
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+button{
+
+font-family:inherit;
+
+border:none;
+
+outline:none;
+
+cursor:pointer;
+
+}
+
+/* ===========================================================
+CONTAINER
+=========================================================== */
+
+.container{
+
+width:min(92%,var(--max-width));
+
+margin:auto;
+
+}
+
+/* ===========================================================
+SECTION
+=========================================================== */
+
+section{
+
+position:relative;
+
+padding:130px 0;
+
+overflow:hidden;
+
+}
+
+/* ===========================================================
+GLASS CARD
+=========================================================== */
+
+.glass{
+
+background:var(--glass);
+
+backdrop-filter:blur(20px);
+
+border:1px solid var(--glassBorder);
+
+border-radius:var(--radius);
+
+box-shadow:var(--shadow);
+
+}
+
+/* ===========================================================
+AURORA BACKGROUND
+=========================================================== */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:-20%;
+
+background:
+radial-gradient(circle at 20% 20%,rgba(0,229,255,.18),transparent 28%),
+radial-gradient(circle at 80% 30%,rgba(120,255,255,.12),transparent 30%),
+radial-gradient(circle at 40% 90%,rgba(0,160,255,.18),transparent 30%);
+
+filter:blur(70px);
+
+animation:aurora 16s linear infinite alternate;
+
+z-index:-3;
+
+}
+
+@keyframes aurora{
+
+0%{
+
+transform:translateX(-6%) translateY(-3%) rotate(0deg);
+
+}
+
+100%{
+
+transform:translateX(6%) translateY(3%) rotate(10deg);
+
+}
+
+}
+
+/* ===========================================================
+ANIMATED GRID
+=========================================================== */
+
+.grid-bg{
+
+position:fixed;
+
+inset:0;
+
+background-image:
+
+linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+
+background-size:42px 42px;
+
+mask-image:radial-gradient(circle at center,black 35%,transparent 90%);
+
+z-index:-2;
+
+pointer-events:none;
+
+opacity:.55;
+
+}
+/* ===========================================================
+LOADING SCREEN
+=========================================================== */
+
+.loader{
+
+position:fixed;
+
+inset:0;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+background:#050505;
+
+z-index:99999;
+
+transition:1s;
+
+}
+
+.loader-logo{
+
+font-size:4rem;
+
+font-weight:900;
+
+letter-spacing:3px;
+
+background:linear-gradient(90deg,#ffffff,#72ecff,#ffffff);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+animation:logoPulse 2s infinite;
+
+}
+
+.loader-subtitle{
+
+margin-top:15px;
+
+font-size:15px;
+
+letter-spacing:5px;
+
+color:#9ddfff;
+
+text-transform:uppercase;
+
+}
+
+.loader-progress{
+
+margin-top:45px;
+
+width:320px;
+
+height:8px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:40px;
+
+overflow:hidden;
+
+}
+
+.loader-progress span{
+
+display:block;
+
+height:100%;
+
+width:0;
+
+background:linear-gradient(90deg,#55dfff,#ffffff,#55dfff);
+
+box-shadow:0 0 30px #6ae7ff;
+
+}
+
+@keyframes logoPulse{
+
+0%{
+
+transform:scale(1);
+
+filter:drop-shadow(0 0 15px #4ce6ff);
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+filter:drop-shadow(0 0 40px #8ff8ff);
+
+}
+
+100%{
+
+transform:scale(1);
+
+filter:drop-shadow(0 0 15px #4ce6ff);
+
+}
+
+}
+
+/* ===========================================================
+NAVBAR
+=========================================================== */
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:1000;
+
+padding:18px 0;
+
+transition:var(--transition);
+
+}
+
+header.scrolled{
+
+padding:10px 0;
+
+backdrop-filter:blur(18px);
+
+background:rgba(7,16,27,.72);
+
+border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+nav{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.logo{
+
+font-size:1.7rem;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+color:white;
+
+}
+
+.logo span{
+
+color:var(--primary);
+
+}
+
+.nav-links{
+
+display:flex;
+
+gap:28px;
+
+list-style:none;
+
+}
+
+.nav-links a{
+
+position:relative;
+
+font-weight:600;
+
+color:#d8f6ff;
+
+transition:.35s;
+
+}
+
+.nav-links a::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-8px;
+
+left:0;
+
+height:2px;
+
+width:0;
+
+background:var(--primary);
+
+transition:.35s;
+
+}
+
+.nav-links a:hover::after,
+
+.nav-links a.active::after{
+
+width:100%;
+
+}
+
+.menu-btn{
+
+display:none;
+
+font-size:30px;
+
+cursor:pointer;
+
+color:white;
+
+}
+
+/* ===========================================================
+HERO SECTION
+=========================================================== */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+position:relative;
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:1fr 430px;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.hero-tag{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:10px 18px;
+
+border-radius:50px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+font-size:14px;
+
+margin-bottom:25px;
+
+}
+
+.status-dot{
+
+width:11px;
+
+height:11px;
+
+border-radius:50%;
+
+background:#2dff91;
+
+box-shadow:0 0 18px #2dff91;
+
+animation:pulseStatus 1.3s infinite;
+
+}
+
+@keyframes pulseStatus{
+
+50%{
+
+transform:scale(1.4);
+
+opacity:.6;
+
+}
+
+}
+
+.hero h1{
+
+font-size:4.7rem;
+
+line-height:1.05;
+
+margin-bottom:20px;
+
+}
+
+.hero h1 span{
+
+background:linear-gradient(90deg,#ffffff,#6fe9ff);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.typing-box{
+
+margin:30px 0;
+
+padding:18px 22px;
+
+border-radius:16px;
+
+background:#08111d;
+
+border:1px solid rgba(255,255,255,.08);
+
+font-family:monospace;
+
+font-size:18px;
+
+color:#79e9ff;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+max-width:700px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:18px;
+
+margin-top:40px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:16px 34px;
+
+border-radius:50px;
+
+font-weight:700;
+
+transition:.35s;
+
+}
+
+.btn-primary{
+
+background:linear-gradient(90deg,#59e6ff,#c4fbff);
+
+color:#031018;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 35px #55e8ff;
+
+}
+
+.btn-outline{
+
+border:1px solid rgba(255,255,255,.12);
+
+background:rgba(255,255,255,.05);
+
+color:white;
+
+}
+
+.btn-outline:hover{
+
+background:#0e2337;
+
+}
+
+.hero-image{
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.profile-ring{
+
+position:absolute;
+
+width:430px;
+
+height:430px;
+
+border-radius:50%;
+
+border:2px solid rgba(255,255,255,.08);
+
+animation:rotateRing 18s linear infinite;
+
+}
+
+.profile-ring::before{
+
+content:"";
+
+position:absolute;
+
+top:-8px;
+
+left:50%;
+
+width:16px;
+
+height:16px;
+
+background:#67ecff;
+
+border-radius:50%;
+
+box-shadow:0 0 25px #55ecff;
+
+}
+
+.profile-photo{
+
+width:340px;
+
+height:340px;
+
+border-radius:50%;
+
+overflow:hidden;
+
+border:6px solid rgba(255,255,255,.08);
+
+box-shadow:0 0 60px rgba(89,230,255,.35);
+
+backdrop-filter:blur(10px);
+
+}
+
+.profile-photo img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+@keyframes rotateRing{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ===========================================================
+FLOATING TECH ICONS
+=========================================================== */
+
+.tech-icons{
+
+position:absolute;
+
+inset:0;
+
+pointer-events:none;
+
+}
+
+.tech-icons i{
+
+position:absolute;
+
+font-size:32px;
+
+color:#8cefff;
+
+opacity:.85;
+
+animation:floatIcon 7s ease-in-out infinite;
+
+filter:drop-shadow(0 0 15px #63eaff);
+
+}
+
+.tech-icons i:nth-child(1){
+
+top:15%;
+
+left:7%;
+
+}
+
+.tech-icons i:nth-child(2){
+
+top:30%;
+
+right:12%;
+
+animation-delay:1s;
+
+}
+
+.tech-icons i:nth-child(3){
+
+bottom:22%;
+
+left:14%;
+
+animation-delay:2s;
+
+}
+
+.tech-icons i:nth-child(4){
+
+bottom:15%;
+
+right:8%;
+
+animation-delay:3s;
+
+}
+
+.tech-icons i:nth-child(5){
+
+top:48%;
+
+left:50%;
+
+animation-delay:1.5s;
+
+}
+
+@keyframes floatIcon{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+}
+
+/* ===========================================================
+PARTICLE BACKGROUND
+=========================================================== */
+
+#particles-js{
+
+position:absolute;
+
+inset:0;
+
+z-index:-1;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:1100px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-image{
+
+margin-top:60px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-links{
+
+display:none;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.hero h1{
+
+font-size:3rem;
+
+}
+
+.profile-ring{
+
+width:310px;
+
+height:310px;
+
+}
+
+.profile-photo{
+
+width:250px;
+
+height:250px;
+
+}
+
+}
+
+/* ===========================================================
+BODY STARTS
+=========================================================== */
+
+</style>
+
+</head>
+
+<body>
+
+<div class="grid-bg"></div>
+
+<div id="particles-js"></div>
+
+<!-- ===========================
+LOADER
+=========================== -->
+
+<div class="loader">
+
+<div class="loader-logo">
+
+FS
+
+</div>
+
+<div class="loader-subtitle">
+
+Initializing Portfolio...
+
+</div>
+
+<div class="loader-progress">
+
+<span id="loaderBar"></span>
+
+</div>
+
+</div>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header id="header">
+
+<div class="container">
+
+<nav>
+
+<a href="#" class="logo">
+
+Shimna<span>.</span>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
+<li><a href="#education">Education</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#github">GitHub</a></li>
+
+<li><a href="#certifications">Certifications</a></li>
+
+<li><a href="#achievements">Achievements</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#blog">Blog</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- ===========================
+HERO SECTION
+=========================== -->
+
+<section class="hero" id="home">
+
+<div class="container hero-grid">
+
+<div class="hero-content">
+<div class="hero-tag">
+
+<div class="status-dot"></div>
+
+<span>STATUS : Available for Internship & Freelance</span>
+
+</div>
+
+<h1>
+
+Hi, I'm
+
+<span>Fathimath Shimna EP</span>
+
+</h1>
+
+<div class="typing-box">
+
+&gt; <span id="typed"></span>
+
+</div>
+
+<p>
+
+Fathimath Shimna E. P. is a highly motivated and academically distinguished aspiring Software Engineer, AI Engineer, Data Analyst, and Full Stack Developer currently pursuing a four-year Bachelor of Computer Applications (BCA) at GEMS Arts and Science College under the University of Calicut. Passionate about software engineering, artificial intelligence, research, and modern web technologies, she continuously develops innovative and user-focused digital solutions.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn btn-primary">
+
+Hire Me
+
+</a>
+
+<a href="#" class="btn btn-outline">
+
+Download Resume
+
+</a>
+
+<a href="mailto:shimnaep590@gmail.com"
+
+class="btn btn-outline">
+
+Email
+
+</a>
+
+<a href="tel:+917306300384"
+
+class="btn btn-outline">
+
+Call
+
+</a>
+
+</div>
+
+<div class="hero-buttons">
+
+<a
+
+href="https://www.linkedin.com/in/fathimath-shimna-ep-b887883a6"
+
+target="_blank"
+
+class="btn btn-outline">
+
+<i class="fab fa-linkedin"></i>
+
+LinkedIn
+
+</a>
+
+<a
+
+href="#"
+
+target="_blank"
+
+class="btn btn-outline">
+
+<i class="fab fa-github"></i>
+
+GitHub
+
+</a>
+
+<a
+
+href="https://www.instagram.com/_fathmth.shimna_"
+
+target="_blank"
+
+class="btn btn-outline">
+
+<i class="fab fa-instagram"></i>
+
+Instagram
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<div class="profile-ring"></div>
+
+<div class="profile-photo">
+
+<!-- Replace profile.jpg with your image -->
+
+<img
+
+src="images/profile.jpg"
+
+alt="Fathimath Shimna EP"
+
+loading="lazy">
+
+</div>
+
+<div class="tech-icons">
+
+<i class="fab fa-python"></i>
+
+<i class="fab fa-java"></i>
+
+<i class="fab fa-html5"></i>
+
+<i class="fab fa-css3-alt"></i>
+
+<i class="fab fa-js"></i>
+
+<i class="fab fa-github"></i>
+
+<i class="fab fa-linux"></i>
+
+<i class="fas fa-database"></i>
+
+<i class="fas fa-brain"></i>
+
+<i class="fas fa-code"></i>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+ABOUT SECTION
+===================================================== -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+About Me
+
+</h2>
+
+<p>
+
+Professional Profile
+
+</p>
+
+</div>
+
+<div class="about-grid">
+
+<div class="glass about-card">
+
+<h3>
+
+Professional Introduction
+
+</h3>
+
+<p>
+
+I am an aspiring Software Engineer with a strong academic background, practical freelance experience in Data Science, and a growing passion for Artificial Intelligence and Full Stack Development. I enjoy building responsive applications, solving real-world problems, and continuously learning emerging technologies.
+
+</p>
+
+</div>
+
+<div class="glass about-card">
+
+<h3>
+
+Career Objective
+
+</h3>
+
+<p>
+
+To contribute to a leading technology company where I can design innovative software products, apply AI-driven solutions, and continue growing as a professional software developer while creating meaningful digital experiences.
+
+</p>
+
+</div>
+
+<div class="glass about-card">
+
+<h3>
+
+Mission
+
+</h3>
+
+<p>
+
+Create modern, scalable, intelligent applications that improve lives through technology while maintaining high standards of quality, accessibility, performance, and user experience.
+
+</p>
+
+</div>
+
+<div class="glass about-card">
+
+<h3>
+
+Vision
+
+</h3>
+
+<p>
+
+Become an internationally recognized Software Engineer and AI Specialist capable of leading innovative projects, conducting impactful research, and inspiring future developers.
+
+</p>
+
+</div>
+
+<div class="glass about-card">
+
+<h3>
+
+Strengths
+
+</h3>
+
+<ul>
+
+<li>✔ Problem Solving</li>
+
+<li>✔ Leadership</li>
+
+<li>✔ Fast Learning</li>
+
+<li>✔ Team Collaboration</li>
+
+<li>✔ Communication</li>
+
+<li>✔ Research Mindset</li>
+
+<li>✔ Critical Thinking</li>
+
+</ul>
+
+</div>
+
+<div class="glass about-card">
+
+<h3>
+
+Coding Philosophy
+
+</h3>
+
+<p>
+
+"Write clean code. Design beautiful experiences. Build solutions that create value."
+
+</p>
+
+</div>
+
+</div>
+
+<div class="stats-grid">
+
+<div class="glass stat-box">
+
+<h2 data-count="9.85">
+
+0
+
+</h2>
+
+<span>
+
+Current CGPA
+
+</span>
+
+</div>
+
+<div class="glass stat-box">
+
+<h2 data-count="18">
+
+0
+
+</h2>
+
+<span>
+
+Projects
+
+</span>
+
+</div>
+
+<div class="glass stat-box">
+
+<h2 data-count="10">
+
+0
+
+</h2>
+
+<span>
+
+Certificates
+
+</span>
+
+</div>
+
+<div class="glass stat-box">
+
+<h2 data-count="1">
+
+0
+
+</h2>
+
+<span>
+
+Years Freelance Experience
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =====================================================
+SKILLS SECTION
+===================================================== -->
+
+<section id="skills">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Skills & Technologies
+
+</h2>
+
+<p>
+
+Programming • AI • Full Stack • Data Science
+
+</p>
+
+</div>
+
+<div class="skills-wrapper">
+
+<!-- ================= Languages ================= -->
+
+<div class="glass skill-category">
+
+<h3>
+
+<i class="fa-solid fa-code"></i>
+
+Programming Languages
+
+</h3>
+
+<div class="skill">
+
+<div class="skill-info">
+
+<span><i class="fa-brands fa-python"></i> Python</span>
+
+<span>95%</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-bar" data-width="95%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-info">
+
+<span><i class="fa-solid fa-c"></i> C</span>
+
+<span>85%</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-bar" data-width="85%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-info">
+
+<span><i class="fa-brands fa-java"></i> Java</span>
+
+<span>90%</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-bar" data-width="90%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-info">
+
+<span><i class="fa-brands fa-js"></i> JavaScript</span>
+
+<span>88%</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-bar" data-width="88%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-info">
+
+<span><i class="fa-brands fa-html5"></i> HTML5</span>
+
+<span>97%</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-bar" data-width="97%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-info">
+
+<span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+
+<span>95%</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-bar" data-width="95%"></div>
+
+</div>
+
+</div>
+
+<div class="skill">
+
+<div class="skill-info">
+
+<span><i class="fa-solid fa-database"></i> SQL</span>
+
+<span>85%</span>
+
+</div>
+
+<div class="progress">
+
+<div class="progress-bar" data-width="85%"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= Tools ================= -->
+
+<div class="glass skill-category">
+
+<h3>
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+Developer Tools
+
+</h3>
+
+<div class="tool-grid">
+
+<div class="tool-card">
+
+<i class="fa-brands fa-github"></i>
+
+<h4>GitHub</h4>
+
+</div>
+
+<div class="tool-card">
+
+<i class="fa-brands fa-git-alt"></i>
+
+<h4>Git</h4>
+
+</div>
+
+<div class="tool-card">
+
+<i class="fa-brands fa-linux"></i>
+
+<h4>Linux</h4>
+
+</div>
+
+<div class="tool-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h4>VS Code</h4>
+
+</div>
+
+<div class="tool-card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h4>PyCharm</h4>
+
+</div>
+
+<div class="tool-card">
+
+<i class="fa-solid fa-terminal"></i>
+
+<h4>Terminal</h4>
+
+</div>
+
+<div class="tool-card">
+
+<i class="fa-solid fa-cloud"></i>
+
+<h4>GitHub Pages</h4>
+
+</div>
+
+<div class="tool-card">
+
+<i class="fa-solid fa-server"></i>
+
+<h4>XAMPP</h4>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= Domains ================= -->
+
+<div class="glass skill-category">
+
+<h3>
+
+<i class="fa-solid fa-microchip"></i>
+
+Professional Domains
+
+</h3>
+
+<div class="domain-grid">
+
+<div class="domain-card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h4>Artificial Intelligence</h4>
+
+</div>
+
+<div class="domain-card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h4>Data Analysis</h4>
+
+</div>
+
+<div class="domain-card">
+
+<i class="fa-solid fa-chart-pie"></i>
+
+<h4>Data Science</h4>
+
+</div>
+
+<div class="domain-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h4>Cyber Security</h4>
+
+</div>
+
+<div class="domain-card">
+
+<i class="fa-solid fa-layer-group"></i>
+
+<h4>Data Structures</h4>
+
+</div>
+
+<div class="domain-card">
+
+<i class="fa-solid fa-globe"></i>
+
+<h4>Full Stack Development</h4>
+
+</div>
+
+<div class="domain-card">
+
+<i class="fa-solid fa-robot"></i>
+
+<h4>Machine Learning</h4>
+
+</div>
+
+<div class="domain-card">
+
+<i class="fa-solid fa-network-wired"></i>
+
+<h4>Cloud Computing</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+EXPERIENCE SECTION
+===================================================== -->
+
+<section id="experience">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Professional Experience
+
+</h2>
+
+<p>
+
+Career Journey
+
+</p>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+</div>
+
+<div class="glass timeline-content">
+
+<h3>
+
+Freelance Data Science Professional
+
+</h3>
+
+<span>
+
+2025 – Present
+
+</span>
+
+<p>
+
+Working on freelance data science tasks, data visualization, Python automation, and analytics projects while continuously improving software development and AI skills.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+</div>
+
+<div class="glass timeline-content">
+
+<h3>
+
+Bachelor of Computer Applications (BCA)
+
+</h3>
+
+<span>
+
+University of Calicut
+
+</span>
+
+<p>
+
+Currently pursuing a four-year BCA degree with an excellent academic record while actively building projects in AI, web development, and full stack technologies.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-icon">
+
+<i class="fa-solid fa-users"></i>
+
+</div>
+
+<div class="glass timeline-content">
+
+<h3>
+
+NSS & JRC Volunteer
+
+</h3>
+
+<span>
+
+Community Leadership
+
+</span>
+
+<p>
+
+Actively participated in National Service Scheme and Junior Red Cross activities, strengthening leadership, teamwork, communication, and social responsibility.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+ <!-- =====================================================
+EDUCATION SECTION
+===================================================== -->
+
+<section id="education">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Education
+
+</h2>
+
+<p>
+
+Academic Journey
+
+</p>
+
+</div>
+
+<div class="education-timeline">
+
+<div class="glass education-card">
+
+<div class="edu-icon">
+
+<i class="fa-solid fa-building-columns"></i>
+
+</div>
+
+<div class="edu-content">
+
+<h3>
+
+Bachelor of Computer Applications (BCA)
+
+</h3>
+
+<h4>
+
+GEMS Arts & Science College, Ramapuram
+
+</h4>
+
+<p>
+
+University of Calicut
+
+</p>
+
+<span class="edu-year">
+
+2024 - Present
+
+</span>
+
+<p>
+
+Currently pursuing a four-year BCA program with a CGPA of <strong>9.85</strong>, specializing in Software Development, Artificial Intelligence, Data Analytics, and Full Stack Development.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="glass education-card">
+
+<div class="edu-icon">
+
+<i class="fa-solid fa-school"></i>
+
+</div>
+
+<div class="edu-content">
+
+<h3>
+
+Higher Secondary Education
+
+</h3>
+
+<h4>
+
+Biology Science
+
+</h4>
+
+<p>
+
+Completed Higher Secondary with Biology Science stream while developing a strong analytical and scientific foundation.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+ACHIEVEMENTS
+===================================================== -->
+
+<section id="achievements">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Achievements
+
+</h2>
+
+<p>
+
+Professional Milestones
+
+</p>
+
+</div>
+
+<div class="achievement-grid">
+
+<div class="glass achievement-card">
+
+<i class="fa-solid fa-diagram-project"></i>
+
+<h2 class="counter" data-target="18">
+
+0
+
+</h2>
+
+<p>
+
+Projects Completed
+
+</p>
+
+</div>
+
+<div class="glass achievement-card">
+
+<i class="fa-solid fa-code-commit"></i>
+
+<h2 class="counter"
+
+data-target="12">
+
+0
+
+</h2>
+
+<p>
+
+Git Commits
+
+</p>
+
+</div>
+
+<div class="glass achievement-card">
+
+<i class="fa-solid fa-award"></i>
+
+<h2 class="counter"
+
+data-target="10">
+
+0
+
+</h2>
+
+<p>
+
+Professional Certifications
+
+</p>
+
+</div>
+
+<div class="glass achievement-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h2 class="counter"
+
+data-target="12">
+
+0
+
+</h2>
+
+<p>
+
+Coding Hours / Day
+
+</p>
+
+</div>
+
+<div class="glass achievement-card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h2 class="counter"
+
+data-target="230">
+
+0
+
+</h2>
+
+<p>
+
+Programming Challenges
+
+</p>
+
+</div>
+
+<div class="glass achievement-card">
+
+<i class="fa-solid fa-people-group"></i>
+
+<h2 class="counter"
+
+data-target="5">
+
+0
+
+</h2>
+
+<p>
+
+Leadership Activities
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+SERVICES
+===================================================== -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Services
+
+</h2>
+
+<p>
+
+What I Can Do
+
+</p>
+
+</div>
+
+<div class="services-grid">
+
+<div class="glass service-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>
+
+Web Development
+
+</h3>
+
+<p>
+
+Modern responsive websites using HTML, CSS, JavaScript and contemporary UI techniques.
+
+</p>
+
+</div>
+
+<div class="glass service-card">
+
+<i class="fa-brands fa-python"></i>
+
+<h3>
+
+Python Development
+
+</h3>
+
+<p>
+
+Python applications, automation scripts, desktop utilities and backend solutions.
+
+</p>
+
+</div>
+
+<div class="glass service-card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3>
+
+Artificial Intelligence
+
+</h3>
+
+<p>
+
+Machine learning concepts, AI-powered applications and intelligent automation.
+
+</p>
+
+</div>
+
+<div class="glass service-card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>
+
+Data Analysis
+
+</h3>
+
+<p>
+
+Data cleaning, visualization, reporting and insights using modern analytical tools.
+
+</p>
+
+</div>
+
+<div class="glass service-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>
+
+Cyber Security
+
+</h3>
+
+<p>
+
+Security awareness, secure coding practices and foundational cybersecurity concepts.
+
+</p>
+
+</div>
+
+<div class="glass service-card">
+
+<i class="fa-solid fa-layer-group"></i>
+
+<h3>
+
+Full Stack Development
+
+</h3>
+
+<p>
+
+Building complete web applications with scalable frontend and backend architecture.
+
+</p>
+
+</div>
+
+<div class="glass service-card">
+
+<i class="fa-solid fa-robot"></i>
+
+<h3>
+
+AI Engineering
+
+</h3>
+
+<p>
+
+Developing AI-integrated software solutions with modern frameworks and APIs.
+
+</p>
+
+</div>
+
+<div class="glass service-card">
+
+<i class="fa-solid fa-gears"></i>
+
+<h3>
+
+Automation
+
+</h3>
+
+<p>
+
+Workflow automation, productivity tools and custom software solutions.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section> 
+ <!-- =====================================================
+PROJECTS SECTION
+===================================================== -->
+
+<section id="projects">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Featured Projects
+
+</h2>
+
+<p>
+
+Professional Portfolio Showcase
+
+</p>
+
+</div>
+
+<!-- ==========================
+PROJECT FILTER
+========================== -->
+
+<div class="project-filter">
+
+<button class="filter-btn active"
+
+data-filter="all">
+
+All
+
+</button>
+
+<button class="filter-btn"
+
+data-filter="web">
+
+Web
+
+</button>
+
+<button class="filter-btn"
+
+data-filter="ai">
+
+AI
+
+</button>
+
+<button class="filter-btn"
+
+data-filter="python">
+
+Python
+
+</button>
+
+<button class="filter-btn"
+
+data-filter="data">
+
+Data Science
+
+</button>
+
+</div>
+
+<!-- ==========================
+PROJECT GRID
+========================== -->
+
+<div class="projects-grid">
+
+<!-- ================= Project 1 ================= -->
+
+<div class="glass project-card"
+
+data-category="web">
+
+<div class="project-image">
+
+<img
+
+src="images/project1.jpg"
+
+alt="Portfolio Project"
+
+loading="lazy">
+
+<div class="project-overlay">
+
+<a href="#">
+
+<i class="fa-solid fa-link"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fa-brands fa-github"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-content">
+
+<h3>
+
+Professional Portfolio Website
+
+</h3>
+
+<p>
+
+Modern responsive portfolio featuring advanced animations, glassmorphism, accessibility, SEO optimization, and GitHub integration.
+
+</p>
+
+<div class="tech-stack">
+
+<span>HTML5</span>
+
+<span>CSS3</span>
+
+<span>JavaScript</span>
+
+<span>GSAP</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="#" class="btn btn-primary">
+
+Live Demo
+
+</a>
+
+<a href="#" class="btn btn-outline">
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= Project 2 ================= -->
+
+<div class="glass project-card"
+
+data-category="python">
+
+<div class="project-image">
+
+<img
+
+src="images/project2.jpg"
+
+alt="Python Project"
+
+loading="lazy">
+
+<div class="project-overlay">
+
+<a href="#">
+
+<i class="fa-solid fa-link"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fa-brands fa-github"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-content">
+
+<h3>
+
+Python Automation Toolkit
+
+</h3>
+
+<p>
+
+Collection of Python automation tools for file management, productivity, reporting, and workflow automation.
+
+</p>
+
+<div class="tech-stack">
+
+<span>Python</span>
+
+<span>Pandas</span>
+
+<span>Automation</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="#" class="btn btn-primary">
+
+Live Demo
+
+</a>
+
+<a href="#" class="btn btn-outline">
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= Project 3 ================= -->
+
+<div class="glass project-card"
+
+data-category="data">
+
+<div class="project-image">
+
+<img
+
+src="images/project3.jpg"
+
+alt="Data Analytics"
+
+loading="lazy">
+
+<div class="project-overlay">
+
+<a href="#">
+
+<i class="fa-solid fa-link"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fa-brands fa-github"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-content">
+
+<h3>
+
+Data Analytics Dashboard
+
+</h3>
+
+<p>
+
+Interactive dashboard with beautiful visualizations, KPI tracking, filtering, and responsive charts.
+
+</p>
+
+<div class="tech-stack">
+
+<span>Python</span>
+
+<span>SQL</span>
+
+<span>Power BI</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="#" class="btn btn-primary">
+
+Live Demo
+
+</a>
+
+<a href="#" class="btn btn-outline">
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= Project 4 ================= -->
+
+<div class="glass project-card"
+
+data-category="ai">
+
+<div class="project-image">
+
+<img
+
+src="images/project4.jpg"
+
+alt="Artificial Intelligence"
+
+loading="lazy">
+
+<div class="project-overlay">
+
+<a href="#">
+
+<i class="fa-solid fa-link"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fa-brands fa-github"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="project-content">
+
+<h3>
+
+AI Smart Assistant
+
+</h3>
+
+<p>
+
+AI-powered assistant using Natural Language Processing with intelligent response generation and automation features.
+
+</p>
+
+<div class="tech-stack">
+
+<span>Python</span>
+
+<span>Machine Learning</span>
+
+<span>AI</span>
+
+</div>
+
+<div class="project-buttons">
+
+<a href="#" class="btn btn-primary">
+
+Live Demo
+
+</a>
+
+<a href="#" class="btn btn-outline">
+
+GitHub
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= Upload Project Card ================= -->
+
+<div class="glass upload-project">
+
+<i class="fa-solid fa-cloud-arrow-up"></i>
+
+<h3>
+
+Upload New Project
+
+</h3>
+
+<p>
+
+Add your future projects here with image, description, GitHub repository, and live deployment link.
+
+</p>
+
+<button class="btn btn-primary">
+
+Upload Project
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section> 
+ <!-- =====================================================
+GITHUB SECTION
+===================================================== -->
+
+<section id="github">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+GitHub Dashboard
+
+</h2>
+
+<p>
+
+Live Developer Statistics
+
+</p>
+
+</div>
+
+<div class="github-wrapper">
+
+<!-- =========================
+PROFILE CARD
+========================= -->
+
+<div class="glass github-profile">
+
+<div class="github-avatar">
+
+<img
+
+id="githubAvatar"
+
+src="images/github-avatar.jpg"
+
+alt="GitHub Avatar"
+
+loading="lazy">
+
+</div>
+
+<h3 id="githubName">
+
+Fathimath Shimna EP
+
+</h3>
+
+<p id="githubBio">
+
+Software Developer • AI Enthusiast • Data Analyst
+
+</p>
+
+<div class="github-stats">
+
+<div>
+
+<h2 id="followers">
+
+23000
+
+</h2>
+
+<span>
+
+Followers
+
+</span>
+
+</div>
+
+<div>
+
+<h2 id="following">
+
+35007
+
+</h2>
+
+<span>
+
+Following
+
+</span>
+
+</div>
+
+<div>
+
+<h2 id="repositories">
+
+0
+
+</h2>
+
+<span>
+
+Repositories
+
+</span>
+
+</div>
+
+</div>
+
+<a
+
+href="#"
+
+id="githubProfile"
+
+target="_blank"
+
+class="btn btn-primary">
+
+Visit GitHub
+
+</a>
+
+</div>
+
+<!-- =========================
+GITHUB OVERVIEW
+========================= -->
+
+<div class="glass github-overview">
+
+<h3>
+
+GitHub Statistics
+
+</h3>
+
+<div class="stats-grid">
+
+<div class="stat-item">
+
+<i class="fa-solid fa-star"></i>
+
+<h2 id="stars">
+
+0
+
+</h2>
+
+<p>
+
+Stars
+
+</p>
+
+</div>
+
+<div class="stat-item">
+
+<i class="fa-solid fa-code-fork"></i>
+
+<h2 id="forks">
+
+0
+
+</h2>
+
+<p>
+
+Forks
+
+</p>
+
+</div>
+
+<div class="stat-item">
+
+<i class="fa-solid fa-code-branch"></i>
+
+<h2 id="languages">
+
+0
+
+</h2>
+
+<p>
+
+Languages
+
+</p>
+
+</div>
+
+<div class="stat-item">
+
+<i class="fa-solid fa-fire"></i>
+
+<h2>
+
+100%
+
+</h2>
+
+<p>
+
+Activity
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =========================
+CONTRIBUTION GRAPH
+========================= -->
+
+<div class="glass contribution-card">
+
+<h3>
+
+Contribution Activity
+
+</h3>
+
+<div class="contribution-grid">
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box active"></div>
+
+<div class="box"></div>
+
+<div class="box active"></div>
+
+<div class="box active"></div>
+
+</div>
+
+</div>
+
+<!-- =========================
+LATEST REPOSITORIES
+========================= -->
+
+<div class="glass repositories">
+
+<h3>
+
+Latest Repositories
+
+</h3>
+
+<div id="repoContainer">
+
+<div class="repo-card">
+
+<h4>
+
+Portfolio Website
+
+</h4>
+
+<p>
+
+Modern responsive personal portfolio.
+
+</p>
+
+<span>
+
+HTML • CSS • JavaScript
+
+</span>
+
+</div>
+
+<div class="repo-card">
+
+<h4>
+
+Python Automation
+
+</h4>
+
+<p>
+
+Automation scripts using Python.
+
+</p>
+
+<span>
+
+Python
+
+</span>
+
+</div>
+
+<div class="repo-card">
+
+<h4>
+
+AI Assistant
+
+</h4>
+
+<p>
+
+Machine Learning & NLP Project.
+
+</p>
+
+<span>
+
+Python • AI
+
+</span>
+
+</div>
+
+<div class="repo-card">
+
+<h4>
+
+Data Analytics
+
+</h4>
+
+<p>
+
+Dashboard and Visualization.
+
+</p>
+
+<span>
+
+Python • SQL
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+CERTIFICATIONS SECTION
+===================================================== -->
+
+<section id="certifications">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Certifications
+
+</h2>
+
+<p>
+
+Professional Learning Journey
+
+</p>
+
+</div>
+
+<div class="certificates-grid">
+
+<div class="glass certificate-card">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>
+
+Artificial Intelligence
+
+</h3>
+
+<p>
+
+Certified in Artificial Intelligence fundamentals and applications.
+
+</p>
+
+</div>
+
+<div class="glass certificate-card">
+
+<i class="fa-solid fa-layer-group"></i>
+
+<h3>
+
+Data Structures
+
+</h3>
+
+<p>
+
+Completed professional Data Structures certification.
+
+</p>
+
+</div>
+
+<div class="glass certificate-card">
+
+<i class="fa-brands fa-python"></i>
+
+<h3>
+
+Python Programming
+
+</h3>
+
+<p>
+
+Advanced Python programming and automation.
+
+</p>
+
+</div>
+
+<div class="glass certificate-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>
+
+Full Stack Development
+
+</h3>
+
+<p>
+
+Modern web application development technologies.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- =====================================================
+BLOG SECTION
+===================================================== -->
+
+<section id="blog">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Latest Articles
+
+</h2>
+
+<p>
+
+Sharing knowledge, ideas and technology insights.
+
+</p>
+
+</div>
+
+<div class="blog-grid">
+
+<div class="glass blog-card">
+
+<img src="images/blog1.jpg"
+
+alt="Artificial Intelligence"
+
+loading="lazy">
+
+<div class="blog-content">
+
+<span>Artificial Intelligence</span>
+
+<h3>
+
+Getting Started with Artificial Intelligence
+
+</h3>
+
+<p>
+
+A beginner-friendly guide to AI concepts, tools, and future opportunities.
+
+</p>
+
+<a href="#" class="btn btn-outline">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+<div class="glass blog-card">
+
+<img src="images/blog2.jpg"
+
+alt="Full Stack"
+
+loading="lazy">
+
+<div class="blog-content">
+
+<span>Full Stack Development</span>
+
+<h3>
+
+Modern Web Development Roadmap
+
+</h3>
+
+<p>
+
+Technologies every developer should learn in 2026.
+
+</p>
+
+<a href="#" class="btn btn-outline">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+<div class="glass blog-card">
+
+<img src="images/blog3.jpg"
+
+alt="Data Science"
+
+loading="lazy">
+
+<div class="blog-content">
+
+<span>Data Science</span>
+
+<h3>
+
+Python for Data Analysis
+
+</h3>
+
+<p>
+
+Using Python libraries to discover valuable insights from data.
+
+</p>
+
+<a href="#" class="btn btn-outline">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+TESTIMONIALS
+===================================================== -->
+
+<section id="testimonials">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Professional Feedback
+
+</h2>
+
+<p>
+
+Recommendations & Reviews
+
+</p>
+
+</div>
+
+<div class="swiper testimonialSwiper">
+
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
+
+<div class="glass testimonial-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+"Shimna demonstrates excellent analytical thinking and consistently delivers high-quality work."
+
+</p>
+
+<h4>
+
+Academic Mentor
+
+</h4>
+
+</div>
+
+</div>
+
+<div class="swiper-slide">
+
+<div class="glass testimonial-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+"An enthusiastic learner with outstanding problem-solving abilities and professionalism."
+
+</p>
+
+<h4>
+
+Project Collaborator
+
+</h4>
+
+</div>
+
+</div>
+
+<div class="swiper-slide">
+
+<div class="glass testimonial-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+"Creative, dedicated and passionate about software engineering and AI."
+
+</p>
+
+<h4>
+
+Senior Developer
+
+</h4>
+
+</div>
+
+</div>
+
+<div class="swiper-slide">
+
+<div class="glass testimonial-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+"Shows excellent communication skills and strong leadership qualities."
+
+</p>
+
+<h4>
+
+NSS Coordinator
+
+</h4>
+
+</div>
+
+</div>
+
+<div class="swiper-slide">
+
+<div class="glass testimonial-card">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+"Quick learner who adapts rapidly to new technologies."
+
+</p>
+
+<h4>
+
+Technical Trainer
+
+</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+CONTACT SECTION
+===================================================== -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+
+Let's Build Something Amazing
+
+</h2>
+
+<p>
+
+Available for internships, freelance projects and collaborations.
+
+</p>
+
+</div>
+
+<div class="contact-wrapper">
+
+<div class="glass contact-info">
+
+<h3>
+
+Contact Information
+
+</h3>
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+<a href="mailto:shimnaep590@gmail.com">
+
+shimnaep590@gmail.com
+
+</a>
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
+<a href="tel:+917306300384">
+
++91 7306300384
+
+</a>
+
+</p>
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+Perinthalmanna, Malappuram, Kerala
+
+</p>
+
+<div class="social-links">
+
+<a href="https://www.linkedin.com/in/fathimath-shimna-ep-b887883a6" target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="https://www.instagram.com/_fathmth.shimna_" target="_blank">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a href="https://wa.me/917306300384" target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="glass contact-form">
+
+<form>
+
+<input
+
+type="text"
+
+placeholder="Your Name"
+
+required>
+
+<input
+
+type="email"
+
+placeholder="Email Address"
+
+required>
+
+<input
+
+type="text"
+
+placeholder="Subject"
+
+required>
+
+<textarea
+
+rows="8"
+
+placeholder="Message"
+
+required>
+
+</textarea>
+
+<button
+
+class="btn btn-primary"
+
+type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>
+
+Fathimath Shimna EP
+
+</h3>
+
+<p>
+
+Software Developer • AI Enthusiast • Data Analyst • Full Stack Developer
+
+</p>
+
+</div>
+
+<div>
+
+<h4>
+
+Quick Links
+
+</h4>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>
+
+Connect
+
+</h4>
+
+<div class="social-links">
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="https://www.linkedin.com/in/fathimath-shimna-ep-b887883a6"><i class="fab fa-linkedin"></i></a>
+
+<a href="https://www.instagram.com/_fathmth.shimna_"><i class="fab fa-instagram"></i></a>
+
+<a href="https://wa.me/917306300384"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<p style="text-align:center;margin-top:25px;">
+
+© 2026 Fathimath Shimna EP. All Rights Reserved.
+
+</p>
+
+<a href="#home" class="back-to-top">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+</div>
+
+</footer>
+<!-- =====================================================
+JAVASCRIPT LIBRARIES
+===================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+"use strict";
+
+/* =====================================================
+LOADER
+===================================================== */
+
+window.addEventListener("load",()=>{
+
+const loader=document.querySelector(".loader");
+
+const bar=document.getElementById("loaderBar");
+
+let progress=0;
+
+const interval=setInterval(()=>{
+
+progress++;
+
+bar.style.width=progress+"%";
+
+if(progress>=100){
+
+clearInterval(interval);
+
+setTimeout(()=>{
+
+loader.style.opacity="0";
+
+loader.style.visibility="hidden";
+
+loader.style.pointerEvents="none";
+
+},500);
+
+}
+
+},18);
+
+});
+
+/* =====================================================
+LENIS SMOOTH SCROLL
+===================================================== */
+
+const lenis=new Lenis({
+
+duration:1.2,
+
+smoothWheel:true,
+
+touchMultiplier:2,
+
+});
+
+function raf(time){
+
+lenis.raf(time);
+
+requestAnimationFrame(raf);
+
+}
+
+requestAnimationFrame(raf);
+
+/* =====================================================
+GSAP
+===================================================== */
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray("section").forEach(section=>{
+
+gsap.from(section,{
+
+opacity:0,
+
+y:80,
+
+duration:1,
+
+ease:"power3.out",
+
+scrollTrigger:{
+
+trigger:section,
+
+start:"top 75%"
+
+}
+
+});
+
+});
+
+/* =====================================================
+TYPEWRITER
+===================================================== */
+
+new Typed("#typed",{
+
+strings:[
+
+"Software Developer",
+
+"AI Enthusiast",
+
+"Data Analyst",
+
+"Full Stack Developer",
+
+"Python Programmer",
+
+"Machine Learning Learner"
+
+],
+
+typeSpeed:55,
+
+backSpeed:35,
+
+backDelay:1600,
+
+loop:true
+
+});
+
+/* =====================================================
+PARTICLES
+===================================================== */
+
+particlesJS("particles-js",{
+
+particles:{
+
+number:{
+
+value:80
+
+},
+
+color:{
+
+value:"#8fefff"
+
+},
+
+shape:{
+
+type:"circle"
+
+},
+
+opacity:{
+
+value:.35
+
+},
+
+size:{
+
+value:3
+
+},
+
+move:{
+
+enable:true,
+
+speed:1.4
+
+},
+
+line_linked:{
+
+enable:true,
+
+distance:150,
+
+color:"#8fefff",
+
+opacity:.25
+
+}
+
+},
+
+interactivity:{
+
+events:{
+
+onhover:{
+
+enable:true,
+
+mode:"grab"
+
+},
+
+onclick:{
+
+enable:true,
+
+mode:"push"
+
+}
+
+}
+
+}
+
+});
+
+/* =====================================================
+HEADER
+===================================================== */
+
+const header=document.getElementById("header");
+
+window.addEventListener("scroll",()=>{
+
+header.classList.toggle(
+
+"scrolled",
+
+window.scrollY>40
+
+);
+
+});
+
+/* =====================================================
+SCROLL PROGRESS
+===================================================== */
+
+const progress=document.createElement("div");
+
+progress.id="scrollProgress";
+
+document.body.appendChild(progress);
+
+window.addEventListener("scroll",()=>{
+
+const total=document.documentElement.scrollHeight-window.innerHeight;
+
+const percent=(window.scrollY/total)*100;
+
+progress.style.width=percent+"%";
+
+});
+
+/* =====================================================
+COUNTERS
+===================================================== */
+
+const counters=document.querySelectorAll(".counter");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+const counter=entry.target;
+
+const target=+counter.dataset.target;
+
+let value=0;
+
+const speed=target/100;
+
+const update=()=>{
+
+value+=speed;
+
+if(value<target){
+
+counter.innerText=Math.ceil(value);
+
+requestAnimationFrame(update);
+
+}else{
+
+counter.innerText=target+"+";
+
+}
+
+};
+
+update();
+
+observer.unobserve(counter);
+
+}
+
+});
+
+});
+
+counters.forEach(c=>observer.observe(c));
+
+/* =====================================================
+PROJECT FILTER
+===================================================== */
+
+const buttons=document.querySelectorAll(".filter-btn");
+
+const cards=document.querySelectorAll(".project-card");
+
+buttons.forEach(btn=>{
+
+btn.addEventListener("click",()=>{
+
+buttons.forEach(b=>b.classList.remove("active"));
+
+btn.classList.add("active");
+
+const filter=btn.dataset.filter;
+
+cards.forEach(card=>{
+
+if(filter==="all"||
+
+card.dataset.category===filter){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+});
+
+/* =====================================================
+VANILLA TILT
+===================================================== */
+
+VanillaTilt.init(
+
+document.querySelectorAll(
+
+".project-card,.service-card,.about-card,.certificate-card"
+
+),
+
+{
+
+max:10,
+
+speed:400,
+
+glare:true,
+
+"max-glare":0.25
+
+}
+
+);
+
+/* =====================================================
+SWIPER
+===================================================== */
+
+new Swiper(".testimonialSwiper",{
+
+loop:true,
+
+spaceBetween:30,
+
+autoplay:{
+
+delay:3000
+
+},
+
+pagination:{
+
+el:".swiper-pagination",
+
+clickable:true
+
+},
+
+breakpoints:{
+
+768:{
+
+slidesPerView:2
+
+},
+
+1200:{
+
+slidesPerView:3
+
+}
+
+}
+
+});
+
+/* =====================================================
+GITHUB API
+===================================================== */
+
+const username="YOUR_GITHUB_USERNAME";
+
+fetch(`https://api.github.com/users/${username}`)
+
+.then(r=>r.json())
+
+.then(data=>{
+
+if(data.login){
+
+document.getElementById("githubName").textContent=data.name||data.login;
+
+document.getElementById("githubAvatar").src=data.avatar_url;
+
+document.getElementById("repositories").textContent=data.public_repos;
+
+document.getElementById("followers").textContent=data.followers;
+
+document.getElementById("following").textContent=data.following;
+
+document.getElementById("githubBio").textContent=data.bio;
+
+document.getElementById("githubProfile").href=data.html_url;
+
+}
+
+})
+
+.catch(()=>{
+
+console.log("GitHub API unavailable.");
+
+});
+
+/* =====================================================
+ACTIVE NAV
+===================================================== */
+
+const sections=document.querySelectorAll("section");
+
+const navLinks=document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+const top=section.offsetTop-150;
+
+if(window.scrollY>=top){
+
+current=section.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.classList.remove("active");
+
+if(link.getAttribute("href")==="#"+current){
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+/* =====================================================
+CONTACT FORM
+===================================================== */
+
+const form=document.querySelector("form");
+
+if(form){
+
+form.addEventListener("submit",e=>{
+
+e.preventDefault();
+
+alert("Thank you! Your message has been received.");
+
+form.reset();
+
+});
+
+}
+
+</script>
+ /* =====================================================
+ACCESSIBILITY
+===================================================== */
+
+document.addEventListener("keydown",(e)=>{
+
+if(e.key==="Tab"){
+
+document.body.classList.add("user-is-tabbing");
+
+}
+
+});
+
+/* =====================================================
+PREFERS REDUCED MOTION
+===================================================== */
+
+const reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)");
+
+if(reduceMotion.matches){
+
+document.querySelectorAll("*").forEach(el=>{
+
+el.style.scrollBehavior="auto";
+
+});
+
+}
+
+/* =====================================================
+LAZY LOADING IMAGES
+===================================================== */
+
+const lazyImages=document.querySelectorAll("img");
+
+const lazyObserver=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+const img=entry.target;
+
+if(img.dataset.src){
+
+img.src=img.dataset.src;
+
+}
+
+lazyObserver.unobserve(img);
+
+}
+
+});
+
+});
+
+lazyImages.forEach(img=>lazyObserver.observe(img));
+
+/* =====================================================
+RIPPLE BUTTON EFFECT
+===================================================== */
+
+document.querySelectorAll(".btn").forEach(button=>{
+
+button.addEventListener("click",function(e){
+
+const ripple=document.createElement("span");
+
+const rect=this.getBoundingClientRect();
+
+ripple.style.left=(e.clientX-rect.left)+"px";
+
+ripple.style.top=(e.clientY-rect.top)+"px";
+
+ripple.className="ripple";
+
+this.appendChild(ripple);
+
+setTimeout(()=>ripple.remove(),600);
+
+});
+
+});
+
+/* =====================================================
+THEME SWITCHER (LIGHT ACCENT)
+===================================================== */
+
+const themeToggle=document.createElement("button");
+
+themeToggle.className="theme-toggle";
+
+themeToggle.innerHTML='<i class="fa-solid fa-moon"></i>';
+
+document.body.appendChild(themeToggle);
+
+themeToggle.addEventListener("click",()=>{
+
+document.body.classList.toggle("light-theme");
+
+themeToggle.innerHTML=document.body.classList.contains("light-theme")
+
+?'<i class="fa-solid fa-sun"></i>'
+
+:'<i class="fa-solid fa-moon"></i>';
+
+localStorage.setItem(
+
+"theme",
+
+document.body.classList.contains("light-theme")
+
+?"light"
+
+:"dark"
+
+);
+
+});
+
+if(localStorage.getItem("theme")==="light"){
+
+document.body.classList.add("light-theme");
+
+themeToggle.innerHTML='<i class="fa-solid fa-sun"></i>';
+
+}
+
+/* =====================================================
+CUSTOM CURSOR
+===================================================== */
+
+const cursor=document.createElement("div");
+
+cursor.className="cursor";
+
+document.body.appendChild(cursor);
+
+window.addEventListener("mousemove",e=>{
+
+cursor.style.left=e.clientX+"px";
+
+cursor.style.top=e.clientY+"px";
+
+});
+
+/* =====================================================
+COPYRIGHT YEAR
+===================================================== */
+
+const yearElement=document.getElementById("year");
+
+if(yearElement){
+
+yearElement.textContent=new Date().getFullYear();
+
+}
+
+/* =====================================================
+INITIALIZATION COMPLETE
+===================================================== */
+
+console.log("Portfolio initialized successfully.");
+
+</script>
+
+</body>
+
+</html> 
