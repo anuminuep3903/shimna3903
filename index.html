@@ -2956,7 +2956,7 @@ GitHub Statistics
 
 <h2 id="stars">
 
-0
+5
 
 </h2>
 
@@ -2974,7 +2974,7 @@ Stars
 
 <h2 id="forks">
 
-0
+4
 
 </h2>
 
@@ -2992,7 +2992,7 @@ Forks
 
 <h2 id="languages">
 
-0
+5
 
 </h2>
 
@@ -3487,7 +3487,7 @@ TESTIMONIALS
 
 <h2>
 
-Professional Feedback
+ Feedback
 
 </h2>
 
@@ -3517,7 +3517,7 @@ Recommendations & Reviews
 
 <h4>
 
-Academic Mentor
+Mr.Jhon alias
 
 </h4>
 
@@ -3539,7 +3539,7 @@ Academic Mentor
 
 <h4>
 
-Project Collaborator
+Mrs.Annie Maria
 
 </h4>
 
@@ -3561,7 +3561,7 @@ Project Collaborator
 
 <h4>
 
-Senior Developer
+Dr.Salahul kiyaz
 
 </h4>
 
@@ -3583,7 +3583,7 @@ Senior Developer
 
 <h4>
 
-NSS Coordinator
+Mrs.Sara Joseph
 
 </h4>
 
@@ -3605,7 +3605,7 @@ NSS Coordinator
 
 <h4>
 
-Technical Trainer
+Karthik k.S
 
 </h4>
 
@@ -3789,7 +3789,7 @@ FOOTER
 
 <h3>
 
-Fathimath Shimna EP
+FathimathShimna EP
 
 </h3>
 
@@ -3849,7 +3849,7 @@ Connect
 
 <hr>
 
-<p style="text-align:center;margin-top:25px;">
+<p style="text-align:center;margin-top:35px;">
 
 © 2026 Fathimath Shimna EP. All Rights Reserved.
 
@@ -4373,173 +4373,6 @@ form.reset();
 });
 
 }
-
-</script>
- /* =====================================================
-ACCESSIBILITY
-===================================================== */
-
-document.addEventListener("keydown",(e)=>{
-
-if(e.key==="Tab"){
-
-document.body.classList.add("user-is-tabbing");
-
-}
-
-});
-
-/* =====================================================
-PREFERS REDUCED MOTION
-===================================================== */
-
-const reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)");
-
-if(reduceMotion.matches){
-
-document.querySelectorAll("*").forEach(el=>{
-
-el.style.scrollBehavior="auto";
-
-});
-
-}
-
-/* =====================================================
-LAZY LOADING IMAGES
-===================================================== */
-
-const lazyImages=document.querySelectorAll("img");
-
-const lazyObserver=new IntersectionObserver(entries=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-const img=entry.target;
-
-if(img.dataset.src){
-
-img.src=img.dataset.src;
-
-}
-
-lazyObserver.unobserve(img);
-
-}
-
-});
-
-});
-
-lazyImages.forEach(img=>lazyObserver.observe(img));
-
-/* =====================================================
-RIPPLE BUTTON EFFECT
-===================================================== */
-
-document.querySelectorAll(".btn").forEach(button=>{
-
-button.addEventListener("click",function(e){
-
-const ripple=document.createElement("span");
-
-const rect=this.getBoundingClientRect();
-
-ripple.style.left=(e.clientX-rect.left)+"px";
-
-ripple.style.top=(e.clientY-rect.top)+"px";
-
-ripple.className="ripple";
-
-this.appendChild(ripple);
-
-setTimeout(()=>ripple.remove(),600);
-
-});
-
-});
-
-/* =====================================================
-THEME SWITCHER (LIGHT ACCENT)
-===================================================== */
-
-const themeToggle=document.createElement("button");
-
-themeToggle.className="theme-toggle";
-
-themeToggle.innerHTML='<i class="fa-solid fa-moon"></i>';
-
-document.body.appendChild(themeToggle);
-
-themeToggle.addEventListener("click",()=>{
-
-document.body.classList.toggle("light-theme");
-
-themeToggle.innerHTML=document.body.classList.contains("light-theme")
-
-?'<i class="fa-solid fa-sun"></i>'
-
-:'<i class="fa-solid fa-moon"></i>';
-
-localStorage.setItem(
-
-"theme",
-
-document.body.classList.contains("light-theme")
-
-?"light"
-
-:"dark"
-
-);
-
-});
-
-if(localStorage.getItem("theme")==="light"){
-
-document.body.classList.add("light-theme");
-
-themeToggle.innerHTML='<i class="fa-solid fa-sun"></i>';
-
-}
-
-/* =====================================================
-CUSTOM CURSOR
-===================================================== */
-
-const cursor=document.createElement("div");
-
-cursor.className="cursor";
-
-document.body.appendChild(cursor);
-
-window.addEventListener("mousemove",e=>{
-
-cursor.style.left=e.clientX+"px";
-
-cursor.style.top=e.clientY+"px";
-
-});
-
-/* =====================================================
-COPYRIGHT YEAR
-===================================================== */
-
-const yearElement=document.getElementById("year");
-
-if(yearElement){
-
-yearElement.textContent=new Date().getFullYear();
-
-}
-
-/* =====================================================
-INITIALIZATION COMPLETE
-===================================================== */
-
-console.log("Portfolio initialized successfully.");
 
 </script>
 
